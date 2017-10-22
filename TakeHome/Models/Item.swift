@@ -10,9 +10,8 @@ import Foundation
 
 enum DTError: LocalizedError {
 	case loadError
-	
 	case responseError(code: Int)
-	case bubbleError(String)
+	case bubbleError(msg: String)
 	
 	var errorDescription: String? {
 		switch self {
