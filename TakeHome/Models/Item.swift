@@ -10,6 +10,7 @@ import Foundation
 
 enum DTError: LocalizedError {
 	case loadError
+	
 	case responseError(code: Int)
 	case bubbleError(msg: String)
 	
