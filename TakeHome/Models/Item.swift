@@ -12,7 +12,7 @@ enum DTError: LocalizedError {
 	case loadError
 	
 	case responseError(code: Int)
-	case bubbleError(msg: String)
+	case bubbleError(String)
 	
 	var errorDescription: String? {
 		switch self {
